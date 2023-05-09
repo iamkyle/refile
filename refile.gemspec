@@ -13,7 +13,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = %w[lib spec] # spec is used by backend gems to run their tests
 
   spec.required_ruby_version = ">= 2.1.0"
-
+  
+  spec.add_dependency "rest-client", "~> 2"
   spec.add_dependency "sinatra", ">= 2.0.0", "<= 4.0.0"
   spec.add_dependency "mime-types"
 end
